@@ -1,0 +1,15 @@
+{
+  "name": "crud_kak_arief",
+  "version": "1.0.0",
+  "description": "CRUD ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "crud",
+    "nodejs"
+  ],
+  "author": "zuramai",
+  "license": "MIT"
+}
