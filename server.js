@@ -1,4 +1,5 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const app = express();
 const PORT = 3000;
 
@@ -10,6 +11,9 @@ const KelasRoutes = require('./routes/kelas');
 const MapelRoutes = require('./routes/mapel');
 const RuanganRoutes = require('./routes/ruangan');
 const TugasRoutes = require('./routes/tugas');
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:false}));
 
 app.use('/api/users', UserRoutes);
 app.use('/api/barang', BarangRoutes);

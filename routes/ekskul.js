@@ -2,11 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // CONTROLLERS
-<<<<<<< HEAD
-const EkskulController = require('./controllers/EkskulController');
-=======
 const EkskulController = require('../controllers/EkskulController');
->>>>>>> b24525d71245365ec8bbbd9e82cc3f33083de105
 
 // API CRUD BARANG
 router.get('/', EkskulController.index);
