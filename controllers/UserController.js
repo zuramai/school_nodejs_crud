@@ -1,7 +1,7 @@
 let mysql = require('./../db');
 
 exports.index = (req, res) => {
-
+    
 }
 
 exports.store = (req, res) => {
