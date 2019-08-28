@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // CONTROLLERS
-const MapelController = require('./controllers/MapelController');
+const MapelController = require('../controllers/MapelController');
 
 // API CRUD BARANG
 router.get('/', MapelController.index);

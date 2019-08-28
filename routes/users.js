@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // CONTROLLERS
-const UserController = require('./controllers/UserController');
+const UserController = require('../controllers/UserController');
 
 // API CRUD USER
 router.get('/api/user', UserController.index);

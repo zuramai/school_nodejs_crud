@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // CONTROLLERS
-const KantinController = require('./controllers/KantinController');
+const KantinController = require('../controllers/KantinController');
 
 // API CRUD BARANG
 router.get('/', KantinController.index);

@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // CONTROLLERS
-const KelasController = require('./controllers/KelasController');
+const KelasController = require('../controllers/KelasController');
 
 // API CRUD BARANG
 router.get('/', KelasController.index);

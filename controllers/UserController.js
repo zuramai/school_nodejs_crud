@@ -4,6 +4,10 @@ exports.index = (req, res) => {
     
 }
 
+exports.detail = (req,res) => {
+
+}
+
 exports.store = (req, res) => {
 
 }

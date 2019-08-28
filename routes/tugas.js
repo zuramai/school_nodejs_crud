@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 // CONTROLLERS
-const TugasController = require('./controllers/TugasController');
+const TugasController = require('../controllers/TugasController');
 
 // API CRUD BARANG
 router.get('/', TugasController.index);
