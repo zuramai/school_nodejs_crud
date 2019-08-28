@@ -1,4 +1,4 @@
-let mysql = require('./../db');
+let db = require('./../config/connection');
 
 exports.index = (req, res) => {
     
