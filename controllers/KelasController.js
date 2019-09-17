@@ -1,4 +1,4 @@
-let db = require('./../config/connection');
+let db = require('./../config/connection')
 
 exports.index = (req, res) => {
 	db.query("SELECT * FROM kelas", (err, result) => {
