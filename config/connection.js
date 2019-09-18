@@ -8,6 +8,6 @@ let connection = mysql.createConnection({
     database: 'kelaskita_crud_nodejs'
 });
 
-connection.connect((err) => {if (err) throw err});
+connection.connect((err) => {if (err) console.log("connection error")});
 
 module.exports = connection;

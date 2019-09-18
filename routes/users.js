@@ -5,10 +5,10 @@ const router = express.Router();
 const UserController = require('../controllers/UserController');
 
 // API CRUD USER
-router.get('/api/user', UserController.index);
-router.get('/api/user/:id', UserController.detail);
-router.post('/api/user', UserController.store);
-router.put('/api/user/:id', UserController.update);
-router.delete('/api/user/:id', UserController.destroy);
+router.get('/', UserController.index);
+router.get('/:id', UserController.detail);
+router.post('/', UserController.store);
+router.put('/:id', UserController.update);
+router.delete('/:id', UserController.destroy);
 
 module.exports = router;
