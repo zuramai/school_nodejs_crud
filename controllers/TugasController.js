@@ -28,6 +28,7 @@ exports.store = (req, res) => {
 
 exports.update = (req, res) => {
 	let tugas = {
+		id: req.params.id,
 		judul: req.body.judul,
 		deskripsi: req.body.deskripsi
 	}
