@@ -14,23 +14,19 @@ exports.detail = (req, res) => {
 	})
 }
 
-exports.detail = (req,res) => {
-
-}
-
 exports.store = (req, res) => {
 	let mapel = {
 		nama: req.body.nama
 	}
 
-	db.query("INSERT INTO mapel (nama) VALUES (?,?)", [mapel.nama], (err, result) => {
+	db.query("INSERT INTO mapel (nama) VALUES (?)", [mapel.nama], (err, result) => {
 		if (err) res.status(500).send({'Error : ': err})
 			else res.status(201).send({'Result : ': result})
 	})
 }
 
 exports.update = (req, res) => {
-	let tugas = {
+	let mapel = {
 		id: req.params.id,
 		nama: req.body.nama
 	}
