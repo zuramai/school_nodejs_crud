@@ -19,7 +19,7 @@ exports.store = (req, res) => {
         nama: req.body.nama,
     }
 
-    db.query("INSERT INTO kantin (nama) VALUES (?,?)", [kantin.nama], (err, result) => {
+    db.query("INSERT INTO kantin (nama) VALUES (?)", [kantin.nama], (err, result) => {
         if (err) res.status(500).send({ 'Error : ': err })
         else res.status(201).send({ 'Result : ': result })
     })
