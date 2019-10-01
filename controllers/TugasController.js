@@ -1,6 +1,6 @@
 let db = require('./../config/connection');
 
-exports.index = (req, res) => {, tugas.deskripsi,
+exports.index = (req, res) => {
 	db.query("SELECT tugas.id, tugas.judul, tugas.deskripsi, tugas.kelas_id, tugas.mapel_id, kelas.nama as nama_kelas, mapel.nama as nama_mapel, kelas.lokasi FROM tugas INNER JOIN kelas ON tugas.kelas_id = kelas.id, mapel.lokasi FROM tugas INNER JOIN mapel ON tugas.mapel_id = mapel.id", (err, result) => {
 		if (err) res.status(404).send({'Error : ': err})
 			else res.status(200).send({'Result: ': result})
